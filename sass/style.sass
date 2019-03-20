@@ -1,0 +1,434 @@
+// Created by Alexander Balinsky
+// author url: https://www.facebook.com/13alinsky
+
+// Variables
+$active: #F5B87C 
+
+//  Global styles
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    color: #000000
+    font-family: "Raleway"
+    font-weight: 400
+
+    
+.flex-center
+    display: flex
+    justify-content: center
+    align-items: center
+
+// Navigation
+.nav-wrapper
+    width: 1000px
+    height: 90px
+    position: absolute
+    top: 0
+    left: 0
+    display: flex
+    flex-direction: row
+    z-index: 1
+    
+
+.logo  
+    font-size: 16px
+    background: #000000
+    color: #ffffff
+    width: 230px
+    height: 100%
+    @extend .flex-center 
+
+    a 
+        text-decoration: none
+    h1
+        font-family: "Playfair Display"
+        font-size: 14px
+        letter-spacing: 2px
+        color: #ffffff
+
+nav 
+    display: flex
+    align-items: center
+    justify-content: space-around
+    width: 100%
+    background-color: #fff
+    
+    a 
+        color: #000000
+        display: flex
+        flex-direction: row
+        text-decoration: none 
+        transition: color 1s ease
+        &:hover 
+            color: #F5B87C
+
+    div 
+        font-family: "Playfair Display"
+.active 
+    color: $active 
+
+
+.sections-wrapper
+    height: 100vh
+
+// Gallery nav
+.gallery-nav
+    width: 230px
+    height: 105px
+    position: absolute
+    bottom: 0
+    right: 0
+    display: flex
+    flex-direction: row
+    align-self: center 
+
+    div
+        flex: 1
+        background-color: #fff  
+        @extend .flex-center 
+    .white-bg
+        background-color: #fff
+    
+    img 
+        height: 18px     
+
+// Text section
+.column-wrapper
+    display: flex
+    height: 100vh 
+
+    section 
+        display: flex
+        
+.text-section
+    flex: 1
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    padding-left: 110px
+    
+
+    h1 
+        font-family: "Playfair Display SC"
+        font-size: 40px
+        line-height: 1.5em
+        font-weight: normal
+        width: 600px
+        margin-bottom: 100px
+        color: #000000
+        
+    p 
+        max-width: 480px
+        line-height: 2em
+        margin-bottom: 50px
+        letter-spacing: 1px
+        color: #000000 
+
+.details-btn   
+    font-weight: normal
+    font-size: 16px
+    text-decoration: underline
+    display: flex
+    align-items: center 
+    letter-spacing: 1px
+    cursor: pointer
+    
+    &:hover 
+        color: #F5B87C
+    
+.image-section
+    flex: 1
+    background: url(/img/image.jpg)
+    background-size: cover
+    position: relative 
+    
+   
+.sidebar
+    width: 115px
+    display: flex
+    flex-direction: column
+    background-color: #fff
+
+
+.hamburger
+    height: 115px
+    width: 100%
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    cursor: pointer
+    
+    div 
+        height: 3px
+        width: 30%
+        align-items: center
+        background: #000000
+        margin-bottom: 7px
+
+.social
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 300px
+    width: 100%
+    align-items: center
+    margin-top: 100px
+  
+    a 
+        writing-mode: vertical-rl
+        text-orientation: mixed
+        text-decoration: none
+        font-size: 24px
+        color: #000000
+        flex-direction: row
+        transition: color 1s ease
+        &:first-child
+            &hover
+                color: #4267b2
+
+        &:last-child
+            &:hover
+                color: #08A0E9
+
+        
+// Media section
+.media-section
+    margin-top: 40px
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    max-height: 100px
+
+.title
+    height: 50vh
+    @extend .flex-center
+
+    .letter 
+        color: rgb(236, 236, 236) 
+        font-family: "Playfair Display SC"
+        text-align: center
+        display: flex
+        font-size: 10vw
+        font-weight: bold
+    
+h2 
+    font-family:  "Playfair Display SC"
+    text-transform: uppercase
+    font-size: 90px
+    font-weight: bold
+    color: #E0E0E0
+    padding-top: 100px
+    padding-bottom: 50px
+    @extend .flex-center 
+
+h3 
+    font-family: "Playfair Display SC"
+    font-size: 40px
+    font-weight: normal
+    text-transform: uppercase
+    color: #101010
+
+h4 
+    font-family: "Playfair Display SC"
+    font-size: 20px
+    font-weight: normal
+    text-transform: uppercase
+    color: #101010
+    
+    
+        
+
+
+// SYMBOLIC SECCULAR CEREMONY
+.text-section-service1
+    flex: 1
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    padding-left: 110px
+
+    h3 
+        font-size: 40px
+        width: 480px
+        margin-bottom: 100px
+        color: #000000
+    p 
+        max-width: 480px
+        line-height: 2em
+        margin-bottom: 50px
+        letter-spacing: 1px
+        color: #000000 
+    
+.image-section-service1
+    flex: 1
+    background: url(/img/services/service1.png)
+    background-repeat: no-repeat
+    width: 100%
+    position: relative
+    opacity: 0.5
+
+// ELOPEMENT IN SWITZERLAND
+.text-section-service2
+    flex: 1
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    padding-left: 110px
+
+    h3 
+        font-size: 40px
+        width: 480px
+        margin-bottom: 100px
+        color: #000000
+    p 
+        max-width: 480px
+        line-height: 2em
+        margin-bottom: 50px
+        letter-spacing: 1px
+        color: #000000 
+
+.image-section-service2
+    flex: 1
+    background: url(/img/services/service2.png)
+    background-repeat: no-repeat
+    width: 100%
+    height: auto
+    position: relative
+    opacity: 0.5
+    margin-left: 110px
+
+// A SECULAR NAMING CEREMONY
+.text-section-service3
+    flex: 1
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    padding-left: 110px
+
+    h3 
+        font-size: 40px
+        width: 480px
+        margin-bottom: 100px
+        color: #000000
+    p 
+        max-width: 480px
+        line-height: 2em
+        margin-bottom: 50px
+        letter-spacing: 1px
+        color: #000000 
+
+.image-section-service3
+    flex: 1
+    background: url(/img/services/service3.png)
+    background-repeat: no-repeat
+    width: 100%
+    height: auto
+    position: relative
+    opacity: 0.5
+       
+// About 
+.text-section-about
+    
+    flex: 1
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    padding-left: 110px
+
+    h3 
+        font-size: 40px
+        width: 480px
+        margin-bottom: 100px
+        color: #000000
+    p 
+        max-width: 480px
+        line-height: 2em
+        margin-bottom: 50px
+        letter-spacing: 1px
+        color: #000000 
+
+.image-section-about
+    flex: 1
+    background: url(/img/marylin_rebelo.png)
+    background-repeat: no-repeat
+    margin-left: 100px
+    width: 100%
+    height: auto
+    position: relative
+    opacity: 0.5 
+
+// Testimonials
+.testimonials-wrapper
+    height: 100vh 
+    display: flex
+    align-content: space-between
+    padding-top: 20px
+    align-items: center
+    flex-direction: column
+    
+    p 
+        
+        line-height: 2em
+        margin-bottom: 50px
+        letter-spacing: 1px
+        color: #000000 
+
+
+.text-wrap
+    margin-top: 50px
+    width: 700px
+    
+    
+//Blog section
+.blog-wrapper
+    max-width: 1000px
+    margin: auto
+
+.grid 
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-gap: 10px
+  align-items: stretch
+    
+  article
+      margin: 40px
+
+      h4 
+          padding: 20px
+
+
+.grid > article img 
+  max-width: 100%
+
+
+// Footer wrapper
+.footer-wrapper
+    margin-top: 50px
+    display: flex
+    flex-direction: column
+    height: 100%
+    @extend .flex-center
+    
+
+    footer
+        flex-direction: column
+        flex: 0 0 auto
+        text-align: center
+        line-height: 1.6
+        @extend .flex-center     
+
+// .goldline 
+//     position: absolute
+//     opacity: 0.5
+//     z-index: -10 
+
+// #Path 
+//     stroke-dasharray: 1000
+//     stroke-dashoffset: 1000 
+//     animation: dash 5s linear forwards
+
+//     @keyframes dash
+//         to
+//             stroke-dashoffset: 500
